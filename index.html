@@ -3,13 +3,707 @@
 <head>
     <meta charset="utf-8" />
     <title>PkPD Movie Archive</title>
+    <link rel="stylesheet" href="styles/site.css" />
+    <script src="scripts/site.js"></script>
 </head>
 <body>
-    <div class="header">Üst</div>
-    <div class="content">
-        <div class="leftMenu">Sol</div>
-        <div class="pageContent">Sağ</div>
+    <div class="header">
+        <div class="logo">
+            <img src="images/logo.png" />
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search Movie" />
+        </div>
+        <div class="user">
+            <span>Can PERK</span>
+            <img src="images/user.png" />
+        </div>
     </div>
-    <div class="footer">Alt</div>
+    <div id="content" class="content">
+        <div class="leftMenu">
+            <h3 id="leftHeader">Kategoriler</h3>
+            <hr />
+            <ul class="categories">
+                <li>Aksiyon</li>
+                <li>Bilim Kurgu</li>
+                <li>Animasyon</li>
+                <li>Korku</li>
+                <li>Tarih</li>
+                <li>Drama</li>
+                <li>Çizgi Film</li>
+                <li>Anime</li>
+                <li>Trajedi</li>
+                <li>Savaş</li>
+                <li>Biyografi</li>
+            </ul>
+        </div>
+        <div class="pageContent">
+            <div class="movieBox">
+                <div class="point">
+                    <span>8.4</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/godfather.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Baba</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>9.2</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/avatar.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Avatar</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>7.1</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/balik.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Balık</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>6.5</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/casablanca.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Casablanca</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>8.0</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/fetih.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Fetih</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>6.4</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/goz.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Göz</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>6.1</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/hangover.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Hangover</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>8.7</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/kabadayi.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Kabadayı</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>7.9</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/sarkbulbulu.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Şark Bülbülü</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>7.9</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/shutterisland.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Zindan Adası</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>6.8</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/sonistasyon.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Son İstasyon</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>7.7</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/sonsuz.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Sonsuz</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>8.8</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/twillight.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Alacakaranlık</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>6.3</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/iki.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>İki</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>9.8</span>
+                </div>
+                <div class="poster">
+                    <a href="detail.html">
+                        <img src="images/covers/recepivedik.jpeg" />
+                    </a>
+                </div>
+                <div class="movieName">
+                    <span>Recep İvedik</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>8.4</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/godfather.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Baba</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>9.2</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/avatar.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Avatar</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>7.1</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/balik.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Balık</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>6.5</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/casablanca.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Casablanca</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>8.0</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/fetih.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Fetih</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>6.4</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/goz.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Göz</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>6.1</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/hangover.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Hangover</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>8.7</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/kabadayi.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Kabadayı</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>7.9</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/sarkbulbulu.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Şark Bülbülü</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>7.9</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/shutterisland.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Zindan Adası</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>6.8</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/sonistasyon.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Son İstasyon</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>7.7</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/sonsuz.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Sonsuz</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>8.8</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/twillight.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Alacakaranlık</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>6.3</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/iki.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>İki</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>9.8</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/recepivedik.jpeg" />
+                </div>
+                <div class="movieName">
+                    <span>Recep İvedik</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>8.4</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/godfather.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Baba</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>9.2</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/avatar.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Avatar</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>7.1</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/balik.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Balık</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>6.5</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/casablanca.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Casablanca</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>8.0</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/fetih.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Fetih</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>6.4</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/goz.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Göz</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>6.1</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/hangover.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Hangover</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>8.7</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/kabadayi.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Kabadayı</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>7.9</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/sarkbulbulu.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Şark Bülbülü</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>7.9</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/shutterisland.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Zindan Adası</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>6.8</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/sonistasyon.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Son İstasyon</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>7.7</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/sonsuz.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Sonsuz</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>8.8</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/twillight.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Alacakaranlık</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>6.3</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/iki.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>İki</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>9.8</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/recepivedik.jpeg" />
+                </div>
+                <div class="movieName">
+                    <span>Recep İvedik</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>8.4</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/godfather.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Baba</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>9.2</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/avatar.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Avatar</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>7.1</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/balik.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Balık</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>6.5</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/casablanca.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Casablanca</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>8.0</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/fetih.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Fetih</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>6.4</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/goz.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Göz</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>6.1</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/hangover.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Hangover</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>8.7</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/kabadayi.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Kabadayı</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>7.9</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/sarkbulbulu.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Şark Bülbülü</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>7.9</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/shutterisland.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Zindan Adası</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>6.8</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/sonistasyon.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Son İstasyon</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>7.7</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/sonsuz.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Sonsuz</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>8.8</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/twillight.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>Alacakaranlık</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>6.3</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/iki.jpg" />
+                </div>
+                <div class="movieName">
+                    <span>İki</span>
+                </div>
+            </div>
+            <div class="movieBox">
+                <div class="point">
+                    <span>9.8</span>
+                </div>
+                <div class="poster">
+                    <img src="images/covers/recepivedik.jpeg" />
+                </div>
+                <div class="movieName">
+                    <span>Recep İvedik</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <span>PkPD Media Entertainment Archive - All Rights Reserved &copy; 2018</span>
+    </div>
 </body>
 </html>
